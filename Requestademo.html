@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a demo at wiziq</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+        margin-left: 10px;
+      }
+      #body {
+        max-width: 100%;
+        height: 832px;
+        box-shadow: 0px 4px 16px -16px #1d2127;
+      }
+      .logo {
+        margin-top: 0px;
+      }
+
+      html,
+      body {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        overflow-x: hidden;
+      }
+      hr {
+        height: 0.5px;
+        width: 95%;
+        background-color: rgb(175, 175, 175);
+        border: none;
+        opacity: 0.5;
+      }
+      .C {
+        margin: 0px 10px;
+      }
+
+      #header {
+        display: grid;
+        grid-template-columns: auto 500px;
+        padding-top: 0px;
+        margin-top: -35px;
+      }
+      .logo img {
+        width: 111px;
+        height: 94px;
+        padding: 44px 52px;
+      }
+      .div2 {
+        display: grid;
+        grid-template-rows: 76px 48px;
+        gap: 10px;
+      }
+      .nav-bar {
+        padding: 42px 0px 0px 20px;
+        margin-right: 70px;
+      }
+      .nav-bar ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        line-height: 26px;
+        font-weight: 300;
+      }
+      .Features {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 70px;
+      }
+      .Features a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 24px;
+        position: static;
+      }
+
+      .hidden-list {
+        display: flex;
+        flex-direction: row;
+        display: none;
+      }
+      .hover-box li {
+        list-style: none;
+      }
+      .hover-box ul {
+        background-color: white;
+      }
+      .hover:hover + .hidden-list {
+        display: block;
+      }
+      #header button {
+        background-color: #f78200;
+        width: 90px;
+        border: none;
+        border-radius: 20px;
+      }
+      .header-button a {
+        font-size: 11px;
+        color: white;
+        font-weight: 300;
+      }
+      #form {
+        background-color: #007ec8;
+        height: 650px;
+        width: 467px;
+        border-radius: 6px;
+        margin: 10px 30px 15px;
+        float: right;
+      }
+      #form-header {
+        padding-top: 15px;
+        color: white;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 22px;
+      }
+      .input input {
+        width: 415px;
+        height: 38px;
+        margin: 6px 8px;
+        font-size: 14px;
+      }
+      select {
+        width: 419px;
+        height: 38px;
+        font-size: 14px;
+        margin: 6px;
+        line-height: normal;
+      }
+      .partA-intro {
+        float: left;
+        width: 45%;
+        box-sizing: content-box;
+        height: 777px;
+      }
+      .text-before-form {
+        width: 642px;
+        font-size: 20px;
+        text-align: start;
+        line-height: 35px;
+        color: #1d2127;
+        font-family: roboto;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 25px;
+        text-align: start;
+        line-height: 40px;
+        margin: 5px 250px 26px 10px;
+      }
+      #partA-list li {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+        float: left;
+        list-style-image: url("./Green\ check\ mark.png");
+        padding-left: 10px;
+        margin-bottom: 17px;
+      }
+      #partA-list {
+        margin-left: -13px;
+      }
+      .partA-intro img {
+        width: 530px;
+        height: 320px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .check-box{
+        color: white;
+      }
+      #bottom-text {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: start;
+        margin-bottom: 10px;
+      }
+      .form-button{
+        width: 407px;
+        height: 53px;
+        color: white;
+        background-color: #f78200;
+        border-radius: 15px;
+        margin: 15px 15px;
+        border: none;
+        font-size: 24px;
+        line-height: 31px;
+      }
+      #footer {
+        width: 1274px;
+        height: 40px;
+        line-height: 22px;
+        clear: both;
+        display: grid;
+        grid-template-columns: 800px 350px 42px;
+      }
+      #center-footer {
+        height: 41px;
+        padding-top: 20px;
+        text-align: center;
+      }
+      #center-footer a {
+        font-size: 12px;
+        color: #007ec8;
+        text-decoration: none;
+      }
+
+      #right-footer {
+        height: 41px;
+
+        padding-top: 20px;
+      }
+      .demo-text {
+        width: 415px;
+        height: 93px;
+        margin: 6px 8px;
+        line-height: 20px;
+        letter-spacing: normal;
+        vertical-align: middle;
+      }
+      .demo-text ::placeholder {
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Creating the header part of the web page-->
+    <div class="C">
+      <div id="header">
+        <!--Creating a div for the logo(div 1)-->
+        <div class="logo div1"><img src="Logo.png" alt="" /></div>
+
+        <!--Creating the navigation(div 2)-->
+        <div class="div2">
+          <div class="nav-bar">
+            <ul>
+              <li>Contact Us</li>
+              <li>|</li>
+              <li>Request a demo</li>
+              <li>|</li>
+              <li>Become a partner</li>
+            </ul>
+          </div>
+          <div class="Features">
+            <div class="hover-box">
+              <a href="https://www.wiziq.com/features/" class="hover"
+                >FEATURES</a
+              >
+              <ul class="hidden-list">
+                <li>Virtual Classroom</li>
+                <li>Tests and Assessments</li>
+                <li>eLearniing Analytics</li>
+                <li>Online Course Creation</li>
+                <li>Mobile Learning</li>
+                <li>LMS eCommerce</li>
+              </ul>
+            </div>
+            <div class="hover-box">
+              <a
+                href="https://www.wiziq.com/integrations/all-virtual-classroom-plugins/"
+                class="hover"
+                >INTEGRATIONS</a
+              >
+              <ul class="hidden-list">
+                <li>Virtual Classroom</li>
+                <li>Tests and Assessments</li>
+                <li>eLearniing Analytics</li>
+                <li>Online Course Creation</li>
+                <li>Mobile Learning</li>
+                <li>LMS eCommerce</li>
+              </ul>
+            </div>
+            <div class="hover-box">
+              <a href="#" class="hover">SOLUTIONS</a>
+              <ul class="hidden-list">
+                <li>Virtual Classroom</li>
+                <li>Tests and Assessments</li>
+                <li>eLearniing Analytics</li>
+                <li>Online Course Creation</li>
+                <li>Mobile Learning</li>
+                <li>LMS eCommerce</li>
+              </ul>
+            </div>
+            <div><a href="">PRICING</a></div>
+            <div class="header-button">
+              <a href="./Requestademo.html" ><button style="color: white;">Get a Demo</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Body div-->
+    <div id="body">
+      <!--Creating the into text and during the demo text too-->
+      <div class="partA-intro">
+        <p class="text-before-form">
+          Wiziq.com is a part of MeritHub and provides the world's best Virtual
+          Classroom, Whiteboard and LMS platform.
+          <br />
+          It doesn't provide tutoring jobs or students to teach online.
+        </p>
+        <h2>During the demo, we will:</h2>
+        <div id="partA-list">
+          <ul>
+            <li>
+              Try to understand your business and exact technology requirements
+            </li>
+            <li>Walk you through how WiziQ works</li>
+            <li>Show you how WiziQ fits your specific needs</li>
+            <li>Discuss the best pricing strategy for you</li>
+          </ul>
+        </div>
+        <img src="./PC sample image.jpg" alt="" />
+        <p id="bottom-text">
+          Remember, this is a no-obligation demo. We only try to show you how it
+          works. Bring in as many questions as possible to get more value from
+          the demo session.
+        </p>
+      </div>
+      <!--creating the form div-->
+      <div id="form">
+        <div>
+          <p id="form-header">Schedule a live Demo</p>
+        </div>
+        <div class="input">
+          <input type="text" placeholder="Name" />
+        </div>
+        <div class="input">
+          <input type="text" placeholder="Email" />
+        </div>
+        <div class="input">
+          <select name="country" id="select-country">
+            <option value="">Country</option>
+            <option value="AF">Afghanistan</option>
+            <option value="AL">Albania</option>
+            <option value="DZ">Algeria</option>
+            <option value="AD">Andorra</option>
+            <option value="AO">Angola</option>
+            <option value="AR">Argentina</option>
+            <option value="AM">Armenia</option>
+            <option value="AU">Australia</option>
+            <option value="AT">Austria</option>
+            <option value="AZ">Azerbaijan</option>
+            <option value="BS">Bahamas</option>
+            <option value="BH">Bahrain</option>
+            <option value="BD">Bangladesh</option>
+            <option value="BB">Barbados</option>
+            <option value="BY">Belarus</option>
+            <option value="BE">Belgium</option>
+            <option value="BZ">Belize</option>
+            <option value="BJ">Benin</option>
+            <option value="BT">Bhutan</option>
+            <option value="BO">Bolivia</option>
+            <option value="BA">Bosnia and Herzegovina</option>
+            <option value="BW">Botswana</option>
+            <option value="BR">Brazil</option>
+            <option value="BN">Brunei</option>
+            <option value="BG">Bulgaria</option>
+            <option value="BF">Burkina Faso</option>
+            <option value="BI">Burundi</option>
+            <option value="CV">Cabo Verde</option>
+            <option value="KH">Cambodia</option>
+            <option value="CM">Cameroon</option>
+            <option value="CA">Canada</option>
+            <option value="CF">Central African Republic</option>
+            <option value="TD">Chad</option>
+            <option value="CL">Chile</option>
+            <option value="CN">China</option>
+            <option value="CO">Colombia</option>
+            <option value="KM">Comoros</option>
+            <option value="CR">Costa Rica</option>
+            <option value="HR">Croatia</option>
+            <option value="CU">Cuba</option>
+            <option value="CY">Cyprus</option>
+            <option value="CZ">Czech Republic</option>
+            <option value="DK">Denmark</option>
+            <option value="DJ">Djibouti</option>
+            <option value="DM">Dominica</option>
+            <option value="DO">Dominican Republic</option>
+            <option value="EC">Ecuador</option>
+            <option value="EG">Egypt</option>
+            <option value="SV">El Salvador</option>
+            <option value="NG">Nigeria</option>
+          </select>
+        </div>
+        <div class="input">
+          <input type="text" placeholder="Phone" />
+        </div>
+        <div class="input">
+          <input type="text" placeholder="What describes you best?" />
+        </div>
+        <div class="input">
+          <input type="text" placeholder="Prefered date and time" />
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder="You want demo on..."
+            class="demo-text"
+          />
+        </div>
+        <label class="check-box"
+          ><input type="checkbox"/>By submitting this form, I agree to WiziQ's
+          <a href="" style="color: white; text-decoration: none;">Privacy Policy</a> <a href="" style="color: white; text-decoration: none;">and User Agreement</a></label
+        >
+        <br>
+        <button class="form-button">Schedule a live demo</button>
+      </div>
+    </div>
+    <footer>
+      <div id="footer">
+        <div id="left-footer"></div>
+        <div id="center-footer">
+          <a
+            href="https://www.wiziq.com/privacy-policy/"
+            style="border-right: 2px solid #007ec8; padding-right: 10px"
+            >Privacy Policy</a
+          >
+          <a href="https://www.wiziq.com/user-agreement/"
+            >Terms and Conditions</a
+          >
+        </div>
+        <div id="right-footer">
+          <a href=""><img src="./orange arrow.jpg" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
